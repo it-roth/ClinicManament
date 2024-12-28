@@ -8,12 +8,12 @@ GO
 -- Doctors table
 CREATE TABLE Doctors (
     DocID VARCHAR(10) PRIMARY KEY,
-    Fname VARCHAR(50) NOT NULL,
-    Lname VARCHAR(50) NOT NULL,
+    Firstname VARCHAR(50) NOT NULL,
+    Lastname VARCHAR(50) NOT NULL,
     Gender VARCHAR(6) CHECK (Gender IN ('Male', 'Female')),
     Specialize VARCHAR(100) NOT NULL,
-    DPhone VARCHAR(15) CHECK (LEN(DPhone) BETWEEN 10 AND 15),
-    DEmail VARCHAR(100) CHECK (DEmail LIKE '%@%.%')
+    Phone VARCHAR(15) CHECK (LEN(DPhone) BETWEEN 10 AND 15),
+    Email VARCHAR(100) CHECK (DEmail LIKE '%@%.%')
 );
 
 -- FullTime table
